@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    color: #ae39b2;
+  }
+  header {
+    padding: 20px 35px;
+    background-color: #ae39b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #070604;
+    margin: 0;
+   }
+  header a {
+    text-decoration: none;
+    color: #fce138;
+  }
+  header nav {
+    margin: 7px 0;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
