@@ -2,35 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgba(243, 237, 237, 0.646);
   }
+ :root {
+    --primary-color: #dfdfe0f5;
+    --secondary-color: #592d92d3;
+    --tertiary-color: rgba(0, 0, 0, 0.356);
+  }
+
+
+
   body {
     font-family: Helvetica, Arial, Helvetica, sans-serif;
-    color: #ae39b2;
+    background-image:url("./assets/images/Calculator.jpg") ;
   }
+   
   header {
-    padding: 20px 35px;
-    background-color: #ae39b2;
+    color: var(--tertiary-color);
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
-  header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #070604;
-    margin: 0;
-   }
-  header a {
-    text-decoration: none;
-    color: #fce138;
-  }
-  header nav {
-    margin: 7px 0;
-  }
-  header nav ul {
+  
+  nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
+  }
+  
+  .jumbo {
+    margin-right: 75px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .column {
+    display: flex;
+    
+  }
+
+  .row{
+    display: flex;
+  }
+  .col-a {
+    display:flex;
+    flex: 25%;
+  }
+
+  .col-b {
+    display: flex;
+    flex:75%
+  }
+
+.jumbotron {
+     background-image: url("./assets/images/Calculator.jpg");
+     background-size: cover;
+  }
+  .photo {
+    background-image: url("./assets/images/Calculator.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 700px;
+    z-index: 00;
   }
