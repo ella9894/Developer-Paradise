@@ -6,60 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Gabriella Portfolio</title>
 </head>
 
 <body>
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Gabriella Akpojiyovwi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-me">Contact Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <h1>Gabriella Akpojiyovwi</h1>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#">Resume</a>
+        </nav>
+    </header>
     <!--End Nav Bar-->
     <hr>    
-
     <!--Jumbotron-->
-    <div class="container photo">
-        <div class="display-4">
-            <img src="assets/images/Calculator.jpg" height=“100" width=“100” alt=“image” loading=“lazy”/>
-          <h3>Developer Paradise</h3>  
-        </div>
-    </div>
-    
+    <section class="jumbotron">
+        <h2>Developer Paradise</h2>  
+    </section>
     <!--End Jumbotron-->
     <hr />
-    <div class="flex-container">
+    
+    <main class="flex-container">
         <!--About Me Section  -->
-        <section id="about-me" class="column">
-            <aside class="row-a">
-                <h2>About Me</h2>
-            </aside>
-            <div id="about-me" class="container row-b">
+        <section id="about-me" class="section-class">
+            <h2>About Me</h2>
+            <div> 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
                     nulla consequatur quia expedita totam fuga deleniti nihil, ab
@@ -71,81 +46,58 @@
         <!-- End About Me -->
         <hr />
         <!-- Portfolio Section -->
-        <section class="row">
-            <aside class="col-a">
+        <section class="section-class" id="work">
+            <aside>
                 <h2>Portfolio</h2>
             </aside>
-            <div id="portfolio" class="container-fluid col-b">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </p>
-                        </div>
+            <div class="work-container">
+                <a href="#" class="work-child team">
+                    <div>
+                        <h3>Pokemon Team Builder</h3>
+                        <p>MERN Stack</p>
                     </div>
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                This card has supporting text below as a natural lead-in to
-                                additional content.
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </p>
-                        </div>
+                </a>
+                <a href="#" class="work-child better">
+                    <div>
+                        <h3>Better Reads</h3>
+                        <p>Fullstack</p>
                     </div>
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This card has even longer
-                                content than the first to show that equal height action.
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </p>
-                        </div>
+                </a>
+                <a href="#" class="work-child movie">
+                    <div>
+                        <h3>What's that Movie</h3>
+                        <p>HTML/CSS/Javascript</p>
                     </div>
-                </div>
+                </a>
+                <a href="#" class="work-child password">
+                    <div>
+                        <h3>Password Generator</h3>
+                        <p>HTML/CSS/Javascript</p>
+                    </div>
+                </a>
+                <a href="#" class="work-child run">
+                    <div>
+                        <h3>Run Buddy</h3>
+                        <span>HTML/CSS</span>
+                    </div>
+                </a>
             </div>
         </section>
         <!-- End Portfolio -->
         <hr />
         <!-- Contact Me Section -->
-        <section class="column">
+        <section class="section-class contact" id="contact">
             <aside class="row-a">
                 <h2>Contact Me</h2>
             </aside>
-            <ul class="nav row-b">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">555-555-555</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:gab.akpoj@gmail.com">gab.akpoj@gmail.com</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/ella9894?tab=repositories">Github</a>
-                </li>
-            </ul>
+            <address>
+                <a aria-current="page" href="">555-555-555</a>
+                <a href="mailto:gab.akpoj@gmail.com">gab.akpoj@gmail.com</a>
+                <a href="https://github.com/ella9894?tab=repositories">Github</a>
+            </address>
         </section>
-    </div>
-    <!--End Contact Me Section-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <!--End Contact Me Section-->
+    </main>
 </body>
 
 </html>

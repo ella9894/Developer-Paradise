@@ -1,37 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgba(243, 237, 237, 0.646);
-  }
- :root {
+:root {
     --primary-color: #dfdfe0f5;
     --secondary-color: #592d92d3;
-    --tertiary-color: rgba(0, 0, 0, 0.356);
+    --tertiary-color: rgba(0, 0, 0, 0.947);
+    --fourth-color: rgb(181, 121, 255);
+    --fifth-color: rgba(129, 126, 126, 0.699);
   }
 
-
-
-  body {
-    font-family: Helvetica, Arial, Helvetica, sans-serif;
-    background-image:url("./assets/images/Calculator.jpg") ;
+* {
+      box-sizing: border-box;
   }
-   
-  header {
-    color: var(--tertiary-color);
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-color);
+  line-height: 1.4;
+  padding: 0;
+  color: var(--tertiary-color);
+  }
+
+ h1,h2,h3,p{
+  margin: 0;
+ } 
+
+header {
     display: flex;
-  }
-  
-  nav ul {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+    padding: 17px 4% 17px 0;
+    box-shadow: 0 5px 30px;
+    align-items:center ;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+
   }
+
+header h1 {
+    color:var(--tertiary-color);
+    font-size: 45px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 7px 3px 7px 4px;
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+nav a {
+    padding: 5px 10px;
+    font-size: 130%;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    background-size: 100% 10px;
+    margin-right: 8px;
+    background-position: bottom;
+    transition: all .2s ease-out;
+  }
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--fourth-color);
+  }
+
+nav a:last-child{
+  margin-right: 1px;
+}
+
+main{
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
   
-  .jumbo {
-    margin-right: 75px;
+.jumbotron{
+
+  } 
+  .photo{
+    background-image: url("/assets/images/");
   }
 
   .flex-container {
@@ -54,18 +101,7 @@
 
   .col-b {
     display: flex;
-    flex:75%
+    flex:75%;
+    justify-content: flex-end;
   }
 
-.jumbotron {
-     background-image: url("./assets/images/Calculator.jpg");
-     background-size: cover;
-  }
-  .photo {
-    background-image: url("./assets/images/Calculator.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-    width: 700px;
-    z-index: 00;
-  }
