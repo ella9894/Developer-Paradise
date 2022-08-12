@@ -11,7 +11,7 @@ This site serves as a virtual resume for web development jobs.
 - CSS
 
 ## Demo
-https://ella9894.github.io/Professional-Profile/
+https://ella9894.github.io/Developer-Paradise/
 ![Portfolio screenshot](./assets/images/Portfolio.png)
 ## Contribution
 Made by Gabriella Akpojiyovwi
