@@ -1,4 +1,5 @@
-# Professional Profile
+# Developer Paradise
+
 ## Description
 A portfolio website containing information about me, link to web development projects that I have done and how to contact me.
 
