@@ -8,7 +8,7 @@ This site serves as a virtual resume for web development jobs.
 
 ## Built With
 - HTML
--CSS
+- CSS
 
 ## Demo
 https://ella9894.github.io/Professional-Profile/
